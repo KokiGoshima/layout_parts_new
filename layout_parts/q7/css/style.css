@@ -64,4 +64,23 @@
   justify-content: space-between;
 }
 
+/* q7-5 */
+.q7-5-inner-org{
+    margin-right: -50px;
+}
+
+.q7-5-fixed{
+  width: 300px;
+  display: inline-block;
+}
+
+.q7-5-flexible{
+  width: 100%;
+  margin-left: 50px;
+  /* max-width: 1000px; */
+  /* overflow-x: auto; */
+  /* white-space: nowrap; */
+  display: inline-block;
+}
+
 /* 回答はここに書いてね */
