@@ -3,7 +3,19 @@
 /* 回答はここに書いてね */
 /* q9-1 */
 
-figure.hover-parent {
+/* .box-inner-org{
+  position: relative;
+}
+
+.q9-org{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 500px;
+  margin: 0 auto;
+} */
+
+/* .hover-parent {
   width: 500px;
   height: 335px;
   position: relative;
@@ -12,7 +24,7 @@ figure.hover-parent {
 }
 
 
-figcaption.hover-mask {
+.hover-mask {
   width: 500px;
   height: 335px;
   position: absolute;
@@ -28,7 +40,21 @@ figcaption.hover-mask {
   text-align: center;
 }
 
-figure.hover-parent:hover .hover-mask {
+.hover-parent:hover .hover-mask {
   opacity: 1;
+} */
+
+.hover-parent{
+  overflow: hidden;
+  width: 500px;
+  height: 335px;
+}
+
+.scale-img{
+  transition: all .5s;
+}
+
+.scale-img:hover{
+  transform: scale(1.5);
 }
 /* 回答はここに書いてね */
