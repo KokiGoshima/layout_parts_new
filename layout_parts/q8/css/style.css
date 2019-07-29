@@ -57,41 +57,31 @@
 }
 
 /* q8-2 */
+
 .q8-2-org{
   /* width: 940px; */
   width: 40%;
   background-color: #eff3f4;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
 }
+
+/* .border{
+  margin-top: 10px;
+  border-top: 1px black solid;
+} */
 
 .q8-2-title{
   font-size: 20px;
+  margin-bottom: 20px;
 }
+
 
 .left{
   /* float: left; */
   /* display: table-cell; */
-  width: 50%;
+  /* width: 50%; */
   /* text-align: right; */
-}
-
-.right{
-  /* float: right; */
-  /* display: table-cell; */
-  height: 112px;;
-  margin-left: 20px;
-  width: 50%;
-  /* box-sizing: border-box; */
-}
-
-.form-content{
-  display: flex;
-}
-
-.message textarea{
-  width: 100%;
-  height: 112px;
 }
 
 label{
@@ -100,12 +90,63 @@ label{
   margin-right: 10px;
 }
 
-.required{
-  color: red;
+input{
+  border-radius: 3px;
+  border: none;
+  height: 18px;
+}
+
+li:not(:last-child), .confirm {
+    margin-bottom: 20px;
 }
 
 
 
+.form-content{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.birth_place > select{
+  width: 131px;
+}
+
+
+.required{
+  color: red;
+}
+
+.right{
+  /* float: right; */
+  /* display: table-cell; */
+  width: 50%;
+  margin-left: 20px;
+  /* height: 232px; */
+}
+
+
+textarea{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.bottom{
+  margin-top: 20px;
+  width: 211px;
+}
+
+.confirm, .submit{
+  text-align: right;
+}
+
+.submit > button{
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
 
 /* .clearfix::after {
   content: "";
