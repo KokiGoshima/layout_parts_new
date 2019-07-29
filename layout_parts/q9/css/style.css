@@ -57,4 +57,45 @@
 .scale-img:hover{
   transform: scale(1.5);
 }
+
+/* q9-2 */
+
+
+.loader-1 {
+  position: relative;
+ border: 5px solid #ecf1f2;
+ border-radius: 50%;
+ margin-right: 10px;
+ width: 100px;
+ height: 100px;
+ padding: 10px;
+ display: inline-block;
+ /* box-sizing: border-box; */
+}
+
+.loader-2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 5px solid #00bcd4;
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  display: inline-block;
+  /* box-sizing: border-box; */
+}
+
+.loader-2:hover{
+  animation-name: cover-border;
+  animation-duration: 1.1s;
+}
+
+@keyframes cover-border{
+  0% {opacity: 0;}
+  100% { opacity: 1;}
+}
 /* 回答はここに書いてね */
