@@ -55,7 +55,7 @@
 
 .q7-4-inner-org{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .q7-4-box-org{
