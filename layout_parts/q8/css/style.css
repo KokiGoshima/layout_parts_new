@@ -113,15 +113,19 @@ li:not(:first-child){
   margin-bottom: 20px;
 }
 
-.q8-2-title__text{
+.q8-2-title{
   position: relative;
-  display: block;
+}
+
+.q8-2-title__text{
+  display: inline-block;
   padding-right: 10px;
   font-size: 24px;
   font-weight: bold;
+  background-color: #ECF1F2;
 }
 
-.q8-2-title__text::before{
+.q8-2-title::before{
   position: absolute;
   top: 50%;
   left: 0;
