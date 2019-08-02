@@ -2,17 +2,17 @@
 
 /* 回答はここに書いてね */
 .q4-content{
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
   padding: 20px;
 }
 
-.table1, .table2{
+.table{
   display: table;
   width: 100%;
 }
 
-.table1{
+.table:first-child{
   margin-bottom: 30px;
 }
 
@@ -21,28 +21,31 @@
   padding: 20px;
 }
 
-.td-1{
+.td-1, .td-3{
   width: 100px;
+}
+
+.td-2, .td-4, .td-5{
+  width: auto;
+}
+
+.td-1{
   background-color: #fdc8b8;
 }
 
 .td-2{
-  width: auto;
   background-color: #e0abd9;
 }
 
 .td-3{
-  width: 100px;
   background-color: #b6d8ed;
 }
 
 .td-4{
-  width: auto;
   background-color: #e5d32e;
 }
 
 .td-5{
-  width: auto;
   background-color: #ec8f9a;
 }
 
