@@ -21,18 +21,24 @@
 
 /* q7-2 */
 .q7-2-inner-org{
-  border-collapse: separate;
-  border-spacing: 25px 0;
   display: table;
 }
 
 .q7-2-box-org{
   display: table-cell;
   vertical-align: middle;
-  width: 225px;
+}
+
+.q7-2-box-text-org{
   font-size: 16px;
   box-sizing: border-box;
+  width: 225px;
 }
+
+.q7-2-box-org:last-child{
+  padding-left: 50px;
+}
+
 
 /* q7-3 */
 .q7-3-inner-org{
@@ -56,32 +62,31 @@
 .q7-4-inner-org{
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
+
 .q7-4-box-org{
-  vertical-align: middle;
   width: 225px;
   font-size: 16px;
   box-sizing: border-box;
 }
 
-.small{
-  /* vertical-align: middle; */
-}
-
 /* q7-5 */
-.q7-5-inner-org{
-  display: flex;
-}
-
 
 .q7-5-fixed{
   width: 300px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  display: inline-block;
   /* flex: 1; */
 }
 
 .q7-5-flexible{
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 360px;
+  margin-left: -310px;
   /* flex: 0; */
 }
 
