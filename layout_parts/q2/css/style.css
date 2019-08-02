@@ -8,17 +8,17 @@
   margin: 0 auto;
 }
 
-.q-2-text{
+.part-1__text, .part-2__text{
   font-size: 18px;
   line-height: 22px;
 }
 
-.image-1{
+.part-1__image{
   float: left;
   margin: 0 20px 10px 0;
 }
 
-.image-2{
+.part-2__image{
   float: right;
   margin: 0 0 10px 20px;
 }
