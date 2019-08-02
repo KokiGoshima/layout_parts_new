@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .q2-content{
   width: 900px;
   padding: 20px;
@@ -8,17 +15,18 @@
   margin: 0 auto;
 }
 
-.part-1__text, .part-2__text{
+.part-1__right, .part-2__left{
   font-size: 18px;
   line-height: 22px;
+  word-break: break-all;
 }
 
-.part-1__image{
+.part-1__left{
   float: left;
   margin: 0 20px 10px 0;
 }
 
-.part-2__image{
+.part-2__right{
   float: right;
   margin: 0 0 10px 20px;
 }
