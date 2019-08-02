@@ -2,7 +2,6 @@
 
 /* 回答はここに書いてね */
 .q4-content{
-  /* display: table; */
   width: 70%;
   margin: 0 auto;
   padding: 20px;
@@ -10,9 +9,6 @@
 
 .table1, .table2{
   display: table;
-  overflow-x: auto;
-  white-space: nowrap;
-  /* table-layout: fixed; */
   width: 100%;
 }
 
@@ -20,10 +16,9 @@
   margin-bottom: 30px;
 }
 
-.td-1, .td-2, .td-3, .td-4, .td-5, .td-6{
+.td {
   display: table-cell;
   padding: 20px;
-  /* float: left; */
 }
 
 .td-1{
