@@ -3,76 +3,45 @@
 /* 回答はここに書いてね */
 /* q9-1 */
 
-/* .box-inner-org{
-  position: relative;
-}
-
-.q9-org{
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 500px;
-  margin: 0 auto;
-} */
-
-/* .hover-parent {
-  width: 500px;
-  height: 335px;
-  position: relative;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-
-
-.hover-mask {
-  width: 500px;
-  height: 335px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.hover-parent:hover .hover-mask {
-  opacity: 1;
-} */
-
-.hover-parent{
-  overflow: hidden;
+.q9-org__parent{
+  /* overflow: hidden; */
   width: 500px;
   height: 335px;
   margin: 0 auto;
   position: relative;
 }
 
-/* .mask{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .8s;
-} */
-
-.scale-img{
+.q9-org__parent__img{
   transition: transform .5s;
 }
 
-.scale-img:hover{
+/* .q9-org__parent__img:hover{
   transform: scale(1.5);
+} */
+
+.q9-org__parent__img:hover .mask__text{
+  transform: translate(10px, 20px);
 }
 
-/* .scale-img:hover .mask{
-  opacity: 1;
-} */
+.q9-org__parent__mask{
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.mask__text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
 
 /* q9-2 */
 
