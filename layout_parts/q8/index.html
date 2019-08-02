@@ -98,28 +98,36 @@
           -->
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
-          <div class="q8 q8-2-org">
-            <div class="border">
-              <h1 class="q8-2-title">Form Exercise</h1>
-              <!-- <form class="form" action="#" method="post"> -->
-              <form class="form" action=".">
-                <div class="form-content clearfix">
-                  <div class="left">
-                    <ul>
-                      <li class="name">
-                        <label for="name">名前<span class = "required">*</span></label>
-                        <input type="text" name="name" value="" id="name">
-                      </li>
+          <div class="q8 q8-2-wrapper">
+            <div class="q8-2-title">
+              <p class="q8-2-title__text">
+                Form Exercise
+              </p>
+            </div>
+            <!-- <form class="form" action="#" method="post"> -->
+            <form class="form" action="index.html">
+              <div class="clearfix">
+                <div class="left">
+                  <ul  class="form-content">
+                    <li class="name clearfix">
+                      <label for="name" class="form-content__title">名前<span class = "required">*</span></label>
+                      <div class="form-content__input">
+                        <input type="text" name="name" value="" id="name" class="input">
+                      </div>
+                    </li>
 
-                      <li class="gender">
-                        <label for="gender">性別</label>
-                        <input type="radio" name="gender" value="男性" id="gender" checked>男性
-                        <input type="radio" name="gender" value="女性" id="gender">女性
-                      </li>
+                    <li class="gender clearfix">
+                      <label for="gender" class="form-content__title">性別</label>
+                      <div class="form-content__input clearfix">
+                        <input type="radio" name="gender" value="男性" id="gender" class="" checked>男性
+                        <input type="radio" name="gender" value="女性" id="gender" class="">女性
+                      </div>
+                    </li>
 
-                      <li class="birth_place">
-                        <label for="birth_place">出身</label>
-                        <select id="birth_place" name="birth_place">
+                    <li class="birth_place clearfix">
+                      <label for="birth_place" class="form-content__title">出身</label>
+                      <div class="form-content__input">
+                        <select id="birth_place" name="birth_place" class="input">
                           <option value="北海道">北海道</option>
                           <option value="青森県">青森県</option>
                           <option value="秋田県">秋田県</option>
@@ -168,41 +176,43 @@
                           <option value="鹿児島県">鹿児島県</option>
                           <option value="沖縄県">沖縄県</option>
                         </select>
-                      </li>
+                      </div>
+                    </li>
 
-                      <li class="email">
-                        <label for="email">Eメール<span class = "required">*</span></label>
-                        <input type="text" name="email" id="email" placeholder="ex)hoge@gmail.com" value="">
-                      </li>
+                    <li class="email clearfix">
+                      <label for="email" class="form-content__title">Eメール<span class = "required">*</span></label>
+                      <div class="form-content__input">
+                        <input type="text" name="email" id="email" placeholder="ex)hoge@gmail.com" value="" class="input">
+                      </div>
+                    </li>
 
-                      <li class="tel_num">
-                        <label for="tel_num">電話番号<span class = "required">*</span></label>
-                        <input type="text" name="tel_num" id="tel_num" placeholder="ex)08012345678" value="">
-                      </li>
+                    <li class="tel_num clearfix">
+                      <label for="tel_num" class="form-content__title">電話番号<span class = "required">*</span></label>
+                      <div class="form-content__input">
+                        <input type="text" name="tel_num" id="tel_num" placeholder="ex)08012345678" value="" class="input">
+                      </div>
+                    </li>
 
-                    </ul>
-                  </div>
+                    <li class="confirm clearfix">
+                      <input type="checkbox" name="confirm" value="yes" class="confirm__input">
+                      <p class="confirm__text">20歳以上です</p>
+                    </li>
+                  </ul>
 
-                  <div class="right">
-                    <!-- <div class="message"> -->
-                      <textarea name="message" placeholder="何かあれば入力してください"></textarea>
-                    <!-- </div> -->
-                  </div>
-                </div>
-
-                <div class="bottom">
-                  <div class="confirm">
-                    <input type="checkbox" name="confirm" value="yes">20歳以上です
-                  </div>
-                  <div class="submit">
-                    <button type="submit">
-                      送信
-                    </button>
+                  <div class="bottom">
+                      <button type="submit" class="bottom__text">
+                        送信
+                      </button>
                   </div>
                 </div>
 
-              </form>
-            </div>
+                <div class="right">
+                    <textarea name="message" placeholder="何かあれば入力してください" class="right__input"></textarea>
+                </div>
+              </div>
+
+
+            </form>
           </div>
           <!-- 回答はここに書いてね -->
         </div>

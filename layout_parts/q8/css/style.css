@@ -57,103 +57,122 @@
 }
 
 /* q8-2 */
-
-.q8-2-org{
-  /* width: 940px; */
-  width: 40%;
-  background-color: #eff3f4;
+.q8-2-wrapper{
+  width: 700px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
+  background-color: #ECF1F2;
 }
-
-/* .border{
-  margin-top: 10px;
-  border-top: 1px black solid;
-} */
-
-.q8-2-title{
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
 
 .left{
-  /* float: left; */
-  /* display: table-cell; */
-  /* width: 50%; */
-  /* text-align: right; */
-}
-
-label{
-  width: 70px;
+  width: 300px;
   float: left;
-  margin-right: 10px;
-}
-
-input{
-  border-radius: 3px;
-  border: none;
-  height: 18px;
-}
-
-li:not(:last-child), .confirm {
-    margin-bottom: 20px;
-}
-
-
-
-.form-content{
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
-}
-
-.birth_place > select{
-  width: 131px;
-}
-
-
-.required{
-  color: red;
 }
 
 .right{
-  /* float: right; */
-  /* display: table-cell; */
-  width: 50%;
-  margin-left: 20px;
-  /* height: 232px; */
+  float: right;
+  width: 380px;
 }
 
-
-textarea{
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.bottom{
-  margin-top: 20px;
-  width: 211px;
-}
-
-.confirm, .submit{
-  text-align: right;
-}
-
-.submit > button{
-  border-radius: 5px;
-  background-color: blue;
-  color: white;
-  border: none;
-}
-
-/* .clearfix::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
-} */
+}
 
+.form-content__title{
+  float: left;
+  width: 100px;
+  line-height: 25px;
+  text-align: right;
+}
+
+.form-content__input{
+  float: right;
+  width: 180px;
+}
+
+.input{
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+li:not(:first-child){
+  margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.q8-2-title{
+  margin-bottom: 20px;
+}
+
+.q8-2-title__text{
+  position: relative;
+  display: block;
+  padding-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.q8-2-title__text::before{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  content: "";
+  background-color: #ccc;
+  /* background-color: #ECF1F2; */
+}
+
+.right__input{
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  box-sizing: border-box;
+  resize: none;
+  border: transparent;
+}
+
+.confirm{
+  text-align: right;
+}
+
+.confirm__text{
+  display: inline;
+}
+
+.confirm__input{
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.bottom{
+  text-align: right;
+  margin-top: 20px;
+}
+
+.bottom__text{
+  padding: 0 10px;
+  border-radius: 5px;
+  background-color: #00BCD4;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+}
 
 
 
