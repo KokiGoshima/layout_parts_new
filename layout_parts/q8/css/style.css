@@ -101,6 +101,15 @@
   line-height: 12px;
   box-sizing: border-box;
   border: transparent;
+  outline: none;
+}
+
+.bottom__text{
+  outline: none;
+}
+
+.input:focus{
+  box-shadow: 0 0 7px #00BCD4;
 }
 
 li:not(:first-child){
@@ -122,6 +131,7 @@ li:not(:first-child){
 }
 
 .q8-2-title__text{
+  position: relative;
   display: inline-block;
   padding-right: 10px;
   font-size: 24px;
@@ -176,10 +186,16 @@ li:not(:first-child){
   padding: 0 10px;
   border-radius: 5px;
   background-color: #00BCD4;
+  border-color: transparent;
   color: #fff;
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
+}
+
+.bottom__text:active{
+  background-color: #fff;
+  color: #00bcd4;
 }
 
 

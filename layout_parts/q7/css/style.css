@@ -41,9 +41,6 @@
 
 
 /* q7-3 */
-.q7-3-inner-org{
-  /* text-align: center; */
-}
 
 .q7-3-box-org{
   display: inline-block;
@@ -54,7 +51,11 @@
 }
 
 .q7-3-box-org:first-child{
-  margin-right: 45px;
+  margin-right: -5px;
+}
+
+.q7-3-box-org:last-child{
+  margin-left: 50px;
 }
 
 /* q7-4 */
@@ -76,9 +77,7 @@
 
 .q7-5-fixed{
   width: 300px;
-  /* margin-right: 50px; */
   display: inline-block;
-  /* flex: 1; */
 }
 
 .q7-5-flexible{
@@ -87,7 +86,6 @@
   box-sizing: border-box;
   padding-left: 360px;
   margin-left: -310px;
-  /* flex: 0; */
 }
 
 /* 回答はここに書いてね */

@@ -14,8 +14,8 @@
 
 .ballon-box::before{
   position: absolute;
-  left: 40px;
-  bottom: -40px;
+  left: 30px;
+  bottom: -45px;
   content: "";
   width: 0;
   height: 0;
@@ -26,8 +26,8 @@
 
 .ballon-box::after{
   position: absolute;
-  left: 40px;
-  bottom: -33px;
+  left: 30px;
+  bottom: -38px;
   content: "";
   width: 0;
   height: 0;
