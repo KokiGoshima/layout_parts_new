@@ -2,7 +2,7 @@
 
 /* 回答はここに書いてね */
 /* q7-1 */
-.q7-1-box-org{
+.q7--float__box{
   width: 225px;
   font-size: 16px;
   float: left;
@@ -15,34 +15,38 @@
   clear: both;
 }
 
-.q7-1-box-org:first-child{
+.q7--float__box:first-child{
   margin-right: 50px;
 }
 
 /* q7-2 */
-.q7-2-inner-org{
+.q7--table__inner{
   display: table;
 }
 
-.q7-2-box-org{
+.q7--table__box{
   display: table-cell;
   vertical-align: middle;
 }
 
-.q7-2-box-text-org{
+.q7--table__text{
   font-size: 16px;
   box-sizing: border-box;
   width: 225px;
 }
 
-.q7-2-box-org:last-child{
+.q7--table__box:last-child{
   padding-left: 50px;
 }
 
 
 /* q7-3 */
 
-.q7-3-box-org{
+.q7--inlineblock__inner{
+  font-size: 0;
+}
+
+.q7--inlineblock__box{
   display: inline-block;
   vertical-align: middle;
   width: 225px;
@@ -50,24 +54,21 @@
   box-sizing: border-box;
 }
 
-.q7-3-box-org:first-child{
-  margin-right: -5px;
-}
 
-.q7-3-box-org:last-child{
+.q7--inlineblock__box:last-child{
   margin-left: 50px;
 }
 
 /* q7-4 */
 
-.q7-4-inner-org{
+.q7--flex__inner{
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
 
 
-.q7-4-box-org{
+.q7--flex__box{
   width: 225px;
   font-size: 16px;
   box-sizing: border-box;
@@ -75,17 +76,26 @@
 
 /* q7-5 */
 
-.q7-5-fixed{
-  width: 300px;
-  display: inline-block;
+
+.q7--margin__inner{
+  font-size: 0;
 }
 
-.q7-5-flexible{
+.q7--margin__fixed{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.q7--margin__flexible{
   width: 100%;
   display: inline-block;
   box-sizing: border-box;
-  padding-left: 360px;
-  margin-left: -310px;
+  padding-left: 350px;
+  margin-left: -300px;
 }
 
+.q7--margin__fixed__text, .q7--margin__flexible__text{
+  font-size: 16px;
+}
 /* 回答はここに書いてね */
