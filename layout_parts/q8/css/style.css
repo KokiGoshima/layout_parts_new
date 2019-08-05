@@ -90,7 +90,9 @@
 .form-content__input{
   float: right;
   width: 180px;
+  position: relative;
 }
+
 
 .input{
   width: 100%;
@@ -102,6 +104,7 @@
   box-sizing: border-box;
   border: transparent;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .radio__btn{
@@ -179,6 +182,20 @@ li:not(:first-child){
   width: 100%;
   content: "";
   background-color: #ccc;
+}
+
+.form-content__input.select-input:after{
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  transform: rotate(45deg);
+  content: "";
+  pointer-events: none;
 }
 
 .right__input{
