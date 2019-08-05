@@ -1,12 +1,9 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-table, td, th{
-    border: 1px solid #dedede;
-    line-height: 26px;
-}
 
-td{
+
+.table td{
   font-size: 16px;
 }
 
@@ -16,26 +13,26 @@ td{
   table-layout: fixed;
 }
 
-.table th, .table td{
+.table th, .table td, .table tr{
   padding: 10px;
-}
-
-.table tr{
+  border: 1px solid #dedede;
+  line-height: 26px;
   text-align: center;
 }
 
-.table tr td:first-child, .table thead th{
+
+.table th{
   background-color: #2244aa;
   color: white;
   font-size: 18px;
 }
 
-tbody tr:nth-child(even){
+.table tr:nth-child(even){
   background-color: #ecf1f2;
 }
 
-tbody tr:last-child{
-  border-bottom: dashed #000 2px;
+.table tfoot{
+  border-top: dashed #000 2px;
 }
 
 /* 回答はここに書いてね */

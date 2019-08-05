@@ -15,18 +15,18 @@
   margin: 0 auto;
 }
 
-.part-1__right, .part-2__left{
+.q2-text{
   font-size: 18px;
   line-height: 22px;
   word-break: break-all;
 }
 
-.part-1__left{
+.q2-img.is-left{
   float: left;
   margin: 0 20px 10px 0;
 }
 
-.part-2__right{
+.q2-img.is-right{
   float: right;
   margin: 0 0 10px 20px;
 }
