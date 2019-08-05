@@ -4,7 +4,7 @@
 
 /* q8-1 */
 
-.button-1, .button-2, .button-3{
+.button-small, .button-medium, .button-large{
   display: inline-block;
   color: white;
   margin-right: 10px;
@@ -29,7 +29,7 @@
   box-shadow: 0 1px 6px rgba(0,0,0,.12);
 }
 
-.button-1{
+.button-small{
   font-size: 16px;
   border-radius: 3px;
   height: 26px;
@@ -38,7 +38,7 @@
   line-height: 26px;
 }
 
-.button-2{
+.button-medium{
   font-size: 20px;
   border-radius: 5px;
   height: 32px;
@@ -47,7 +47,7 @@
   line-height: 32px;
 }
 
-.button-3{
+.button-large{
   font-size: 24px;
   border-radius: 7px;
   height: 38px;
@@ -104,6 +104,38 @@
   outline: none;
 }
 
+.radio__btn{
+  display: none;
+}
+
+.radio__text{
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.radio__text:before{
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: "";
+}
+
+.radio__btn:checked + .radio__text:after{
+  position: absolute;
+  top: 30%;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #00BCD4;
+  border-radius: 50%;
+  content: "";
+}
+
 .bottom__text{
   outline: none;
 }
@@ -147,7 +179,6 @@ li:not(:first-child){
   width: 100%;
   content: "";
   background-color: #ccc;
-  /* background-color: #ECF1F2; */
 }
 
 .right__input{
@@ -167,14 +198,39 @@ li:not(:first-child){
 }
 
 .confirm__text{
-  display: inline;
+  display: inline-block;
+  position: relative;
+  padding-left: 24px;
 }
 
-.confirm__input{
+.confirm__text:before{
+  position: absolute;
+  top: 50%;
+  left: 0;
   width: 16px;
   height: 16px;
+  margin-top: -9px;
   background-color: #fff;
   border: 1px solid #ccc;
+  content: "";
+}
+
+.confirm__input:checked + .confirm__text:after{
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -14px;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #00bcd4;
+  border-bottom: 3px solid #00bcd4;
+  transform: rotate(45deg);
+  content: "";
+}
+
+
+.confirm__input{
+  display: none;
 }
 
 .bottom{

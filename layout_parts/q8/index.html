@@ -32,26 +32,26 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div class="button-1 common ">common</div>
-            <div class="button-1 error ">error</div>
-            <div class="button-1 disabled ">disabled</div>
-            <div class="button-1 shadow ">shadow</div>
+            <div class="button-small common ">common</div>
+            <div class="button-small error ">error</div>
+            <div class="button-small disabled ">disabled</div>
+            <div class="button-small shadow ">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div class="button-2 common ">common</div>
-            <div class="button-2 error ">error</div>
-            <div class="button-2 disabled ">disabled</div>
-            <div class="button-2 shadow ">shadow</div>
+            <div class="button-medium common ">common</div>
+            <div class="button-medium error ">error</div>
+            <div class="button-medium disabled ">disabled</div>
+            <div class="button-medium shadow ">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div class="button-3 common ">common</div>
-            <div class="button-3 error ">error</div>
-            <div class="button-3 disabled ">disabled</div>
-            <div class="button-3 shadow ">shadow</div>
+            <div class="button-large common ">common</div>
+            <div class="button-large error ">error</div>
+            <div class="button-large disabled ">disabled</div>
+            <div class="button-large shadow ">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -104,7 +104,6 @@
                 Form Exercise
               </p>
             </div>
-            <!-- <form class="form" action="#" method="post"> -->
             <form class="form" action="index.html">
               <div class="clearfix">
                 <div class="left">
@@ -112,16 +111,21 @@
                     <li class="name clearfix">
                       <label for="name" class="form-content__title">名前<span class = "required">*</span></label>
                       <div class="form-content__input">
-                        <input type="text" name="name" value="" id="name" class="input">
+                        <input type="text" name="name" value="" id="name" class="input" required>
                       </div>
                     </li>
 
                     <li class="gender clearfix">
                       <label for="gender" class="form-content__title">性別</label>
                       <div class="form-content__input clearfix">
-                        <input type="radio" name="gender" value="男性" id="gender" class="" checked>男性
-                        <input type="radio" name="gender" value="女性" id="gender" class="">女性
-                      </div>
+                        <label class="input__radio">
+                          <input type="radio" name="gender" value="男性" id="gender" class="radio__btn" checked>
+                          <span class="radio__text">男性</span>
+                        </label>
+                        <label class="input__radio">
+                          <input type="radio" name="gender" value="女性" id="gender" class="radio__btn">
+                          <span class="radio__text">女性</span>
+                        </label>                      </div>
                     </li>
 
                     <li class="birth_place clearfix">
@@ -139,20 +143,24 @@
                     <li class="email clearfix">
                       <label for="email" class="form-content__title">Eメール<span class = "required">*</span></label>
                       <div class="form-content__input">
-                        <input type="text" name="email" id="email" placeholder="ex)hoge@gmail.com" value="" class="input">
+                        <input type="text" name="email" id="email" placeholder="ex)hoge@gmail.com" value="" class="input" required>
                       </div>
                     </li>
 
                     <li class="tel_num clearfix">
-                      <label for="tel_num" class="form-content__title">電話番号<span class = "required">*</span></label>
+                      <label for="tel_num" class="form-content__title">電話番号</label>
                       <div class="form-content__input">
                         <input type="text" name="tel_num" id="tel_num" placeholder="ex)08012345678" value="" class="input">
                       </div>
                     </li>
 
                     <li class="confirm clearfix">
-                      <input type="checkbox" name="confirm" value="yes" class="input confirm__input">
-                      <p class="confirm__text">20歳以上です</p>
+                      <div class="confirm__content">
+                        <div class="confirm__checkbox">
+                          <input type="checkbox" name="confirm" value="yes" class="confirm__input" value="true" id="confirm__input">
+                          <label class="confirm__text" for="confirm__input">20歳以上です</label>
+                        </div>
+                      </div>
                     </li>
                   </ul>
 
